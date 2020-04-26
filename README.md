@@ -1,5 +1,5 @@
 # Dream.Inc
-<p align="center"><img src="https://github.com/he2a/Dream.Inc/blob/master/image/dreaminc.jpg"></p>
+<p align="center"><img src="https://github.com/he2a/Dream.Inc/blob/master/image/screen.jpg"></p>
 
 ## Overview
 Just an old startpage with CSS animations and day/night cycle. Preview it <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/he2a/Dream.Inc/master/index.htm">here</a>.
