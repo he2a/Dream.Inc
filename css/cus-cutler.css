@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+img.align-corner
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 85%;
+	vertical-align: top;
+	
+}
+
+body.day
+{
+	background-color: #8ad1ff;
+}
+
+body.night
+{
+	background-color: #263238;
+}
+
+.unclickable-wrapper
+{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.title-box
+{
+	position: absolute;
+	bottom: 0%;
+	right: 10%;
+	
+	white-space: nowrap;
+	margin: 0px;
+}
+
+.text-night
+{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:right;
+	font-size: 85pt;
+	color: #90a4ae;
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.text-day
+{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:right;
+	font-size: 85pt;
+	color: #e1f5fe;
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+
+@keyframes cloud
+{
+	from 
+	{
+		left: -50%;
+	}
+
+	to 
+	{
+		left: 100%;
+	}
+}
+
+@keyframes sun
+{
+	from 
+	{
+		transform: rotate(0deg);
+	}
+
+	to 
+	{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes star
+{
+	from
+	{
+		opacity: 1.0;
+	}
+	
+	to
+	{
+		opacity: 0.1;
+	}
+}
+
+@keyframes starfar
+{
+	from
+	{
+		opacity: 1.0;
+	}
+	
+	to
+	{
+		opacity: 0.5;
+	}
+}
+.day-anim
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	overflow: hidden;
+	
+}
+
+.sun
+{
+	position:absolute;
+	right: 50%;
+	bottom:50%;	
+	height: 50%;
+	animation-name: sun;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+	z-index:-4;
+}
+
+.cloud
+{
+	position:absolute;
+	left: -50%;
+	animation-name: cloud;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.uno
+{
+	top:0%;	
+	height: 25%;
+	animation-duration: 90s;
+	animation-delay: 1s;
+	z-index:-3;
+}
+
+.dos
+{
+	top:15%;	
+	height: 30%;
+	animation-duration: 60s;
+	animation-delay: 60s;
+	z-index:-2;
+}
+
+.tres
+{
+	top:20%;	
+	height:35%;
+	animation-duration: 45s;
+	animation-delay: 90s;
+	z-index:-1;
+}
+
+.cuatro
+{
+	top:25%;	
+	height: 50%;
+	animation-duration: 30s;
+	animation-delay: 150s;
+	z-index:0;
+}
+
+.night-anim
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	overflow: hidden;
+	
+}
+
+.starry-star
+{	position: absolute;
+	width:  100%;
+	height: 100%;
+	vertical-align: middle;
+	z-index: -2; 
+}
+
+.starry-star-backa
+{	position: absolute;
+	width:  50%;
+	height: 100%;
+	left: 0px;
+	vertical-align: middle;
+	z-index: -2; 
+}
+
+.starry-star-backb
+{	position: absolute;
+	width:  50%;
+	height: 100%;
+	right: 0px;
+	vertical-align: middle;
+	z-index: -2; 
+}
+
+.alpha
+{
+	animation-name: star;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 0.8s;
+	animation-delay: 0.1s;
+	animation-direction: alternate;
+}
+
+.beta
+{
+	animation-name: star;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 0.2s;
+	animation-duration: 0.4s;
+	animation-direction: alternate;
+}
+
+.theta
+{
+	animation-name: starfar;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-direction: alternate;
+}
+
+.gamma
+{
+	animation-name: sun;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+}
+
+.delta
+{
+	animation-name: sun;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 180s;
+}
+
+.omega
+{
+	animation-name: sun;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 2500s;
+}
+
+.juan
+{
+	position: absolute;
+	width:  50%;
+	height: 50%;
+	vertical-align: middle;
+	z-index: -3; 
+	top:0px;
+	left:0px;
+}
+
+.hitler
+{
+	position: absolute;
+	width:  50%;
+	height: 50%;
+	vertical-align: middle;
+	z-index: -3; 
+	
+	top:0px;
+	right:0px;
+}
+
+.gustapo
+{
+	position: absolute;
+	width:  50%;
+	height: 50%;
+	vertical-align: middle;
+	z-index: -3; 
+	
+	bottom:0px;
+	left:0px;
+}
+
+.paul
+{
+	position: absolute;
+	width:  50%;
+	height: 50%;
+	vertical-align: middle;
+	z-index: -3; 
+	
+	bottom:0px;
+	right:0px;
+}
+/*
+.search-box
+{
+	position:absolute;
+	top:50%;
+	left:10%;
+}
+.container
+{
+	width: 300px;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+}
+
+.container input#search
+{
+	width: 50px;
+	height: 50px;
+	background: #ffffff;
+	border: none;
+	font-size: 12pt;
+	float: left;
+	color: #ffffff;
+	border-radius: 5px;
+	outline:none;
+	transition: width .5s ease;
+	
+}
+
+.container input#search:focus, .container input#search:active, .container input#search:hover
+{
+	width: 300px;
+	color: #4f5b66;
+	padding-left: 50px;
+	padding-right: 10px;
+}
+
+.container .icon
+{
+	position: absolute;
+	left: 18px;
+	top: 15px;
+	z-index: 1;
+	color: #4f5b66;
+	pointer-events: none;	
+}
+*/

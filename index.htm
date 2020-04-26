@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/cus-cutler.css">
+		<link rel="icon" href="image/fab.png" type="image/png" >
+		<title>#Dream.Inc</title>
+	</head>
+	<body>
+		<div class="unclickable-wrapper">
+		
+			<div class="title-box">
+				<p id="title-text">#Dream.Inc</p>
+			</div>
+			
+			<img id="night-overlay" src="image/overlay-night.svg" class="align-corner"></img>
+			<div id="night-box" class="night-anim">			
+				<img src="image/starmap.svg" class="starry-star-backa omega"></img>			
+				<img src="image/starmap.svg" class="starry-star-backb omega"></img>
+				<img src="image/starmap.svg" class="juan theta"></img>
+				<img src="image/starmap.svg" class="hitler theta"></img>
+				<img src="image/starmap.svg" class="gustapo theta"></img>
+				<img src="image/starmap.svg" class="paul theta"></img>
+				<img src="image/staranimask-0.svg" class="starry-star alpha"></img>
+				<img src="image/staranimask-1.svg" class="starry-star beta"></img>
+				<img src="image/staranimask-1.svg" class="starry-star gamma"></img>
+				<img src="image/staranimask-2.svg" class="starry-star delta"></img>
+			</div>
+			
+			<img id="day-overlay" src="image/overlay-day.svg" class="align-corner"></img>
+			<div id="day-box" class="day-anim">
+				<img src="image/sun.svg" class="sun"></img>		
+				<img src="image/cloud.svg" class="cloud uno"></img>
+				<img src="image/cloud.svg" class="cloud dos"></img>
+				<img src="image/cloud.svg" class="cloud tres"></img>
+				<img src="image/cloud.svg" class="cloud cuatro"></img>
+			</div>
+			
+		</div>
+<!--
+		<div class="search-box">
+			<div class="container">
+				<input type="search" id="search" placeholder=" " onkeydown="if (event.keyCode == 13 || event.which == 13) { location='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('search').value);}" />
+				<span class="icon"><i class="fa fa-search"></i></span>
+			</div>
+		</div>
+-->
+	</body>
+	
+	<script type="text/javascript">
+		var currentTime = new Date().getHours();
+		if (6 <= currentTime && currentTime < 18) {
+			document.body.className = 'day';
+			document.getElementById('title-text').className = 'text-day';
+			document.getElementById('night-box').style.display='none';
+			document.getElementById('day-box').style.display='block';
+			document.getElementById('night-overlay').style.display='none';
+			document.getElementById('day-overlay').style.display='block';
+			
+		}
+		else {
+			document.body.className = 'night';
+			document.getElementById('title-text').className = 'text-night';
+			document.getElementById('night-box').style.display='block';
+			document.getElementById('day-box').style.display='none';
+			document.getElementById('night-overlay').style.display='block';
+			document.getElementById('day-overlay').style.display='none';
+			
+		}
+		
+		var unFocus = function () {
+			if (document.selection) {
+				document.selection.empty()
+			} 
+			else {
+				window.getSelection().removeAllRanges()
+			}
+		}
+		
+		document.getElementById('unclickable-wrapper').onmousemove = function () {
+			unFocus()
+		}
+		
+		document.getElementById('unclickable-wrapper').onmouseup = function () {
+			unFocus()
+		}
+		
+	</script>
+</html>
+
+		
+		
